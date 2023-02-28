@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Wellcome to Pioneer Bank</title>
+</head>
+<body>
+    <div id="loginFullArea" class="container">
+        <h2 id="loginWellComeTitle">Wellcome to Pioneer Bank</h2>
+        <div id="loginArea">
+            <input class="usrpasrd form-control" type="email" placeholder="Your Email">
+            <input type="password" class="usrpasrd form-control" name="" placeholder="Your password">
+            <input class="btn btn-success loginBtn" type="button" value="submit">
+        </div>
+    </div>
+
+    <!-- Second Page Code -->
+
+    <div id="transition" class="container">
+        <div class="row">
+            <div id class="col-md-4">
+                <div class="Diposit box">
+                    <h5>Diposit</h5>
+                    <h2>$ 00   </h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+               <div class="withdraw box">
+                <h5>Withdraw</h5>
+                <h2>$ 00</h2>
+               </div>
+            </div>
+            <div class="col-md-4">
+                <div class="Balance box">
+                <h5>Balance</h5>
+                <h2>$ 1240</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="loginArea" class="col-md-6">
+                <h2>Diposit</h2>
+                <input id="dopositAmmount" class="form-control " placeholder="$ Ammount You Want to Diposit" type="text">
+                <button id="dipositbtn" class="btn btn-success loginBtn">Diposit</button>
+            </div>
+            <div id="loginArea" class="col-md-6">
+                <h2>Withdraw</h2>
+                <input class="form-control " placeholder="$ You Want to Withdraw" type="text">
+                <button class="btn btn-success loginBtn">Withdraw</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Login Button
+        let loginFullArea = document.getElementById('loginFullArea');
+        loginFullArea.addEventListener('click', function(){
+            loginFullArea.style.display = 'none';
+            let transitio = document.getElementById("transition");
+            transitio.style.display = "block"
+           })
+
+        // Doposit Button 
+        let dipositbtn = document.getElementById("dipositbtn");
+        dipositbtn.addEventListener('click', function(){
+        
+        let dopositAmmount = document.getElementById("dopositAmmount").value;
+        let dopositAmmountNumber = parseFloat("dopositAmmount")
+        console.log("dopositAmmountNumber")
+
+        })
+        
+
+    </script>
+</body>
+</html>

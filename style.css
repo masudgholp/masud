@@ -1,0 +1,41 @@
+*{padding: 0; margin: 0;}
+
+#loginFullArea{
+    margin-top: 20vh;
+    width: 95vw;
+}
+#loginWellComeTitle{
+    text-align: center;
+}
+#loginArea{
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 10px 20px;
+}
+.usrpasrd{
+    margin-top: 20px;
+}
+.loginBtn{
+    margin-top: 10px;
+}
+#transition{
+    display: none;
+}
+.row{
+    margin-top: 50px;
+}
+.box{
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+}
+.Diposit{
+    background-color: #8E83EC;
+}
+.withdraw{
+    background-color: #FFC8A8;
+}
+.Balance{
+    background-color: #FFD068;
+}
